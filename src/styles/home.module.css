@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-200);
+  margin-bottom: 1.75rem;
+}
+
+.wrapper form {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper form input {
+  width: 16.875rem;
+  margin-bottom: 1.125rem;
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--gray-200);
+}
+
+.wrapper form input::placeholder {
+  font-size: 1rem;
+  color: var(--gray-100);
+  text-decoration: underline;
+}
+
+.wrapper form .passwordWrong {
+  border: 1px solid var(--red);
+}
+
+.wrapper form label[for="confirmPassword"] {
+  color: var(--red);
+  font-size: 0.75rem;
+  margin-top: -1.125rem;
+  margin-bottom: 0.1525rem;
+}
+
+.wrapper form button {
+  width: 16.875rem;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  color: var(--white);
+
+  background-color: var(--blue);
+  border: 0;
+  border-radius: 1.25rem;
+
+  transition: 0.2s;
+}
+
+.wrapper form button:hover {
+  opacity: 0.9;
+  transform: scale(0.99);
+}
+
+.wrapper a {
+  font-size: 1.25rem;
+  color: var(--black);
+  text-decoration: underline;
+
+  transition: 0.2s;
+}
+
+.wrapper a:hover {
+  opacity: 0.9;
+  transform: scale(0.99);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    height: 60vh;
+    width: 100vw;
+    padding-top: 3rem;
+    justify-content: start;
+  }
+}
