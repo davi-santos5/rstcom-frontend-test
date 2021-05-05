@@ -56,6 +56,17 @@
   text-decoration: underline;
 }
 
+.wrapper form .passwordWrong {
+  border: 1px solid var(--red);
+}
+
+.wrapper form label[for="confirmPassword"] {
+  color: var(--red);
+  font-size: 0.75rem;
+  margin-top: -1.125rem;
+  margin-bottom: 0.1525rem;
+}
+
 .wrapper form button {
   width: 16.875rem;
   padding: 0.75rem;
